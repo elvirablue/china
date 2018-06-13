@@ -1,0 +1,60 @@
+.video {
+  display: block;
+  padding-top: 120px;
+  background: url("../img/bg-1.png") center no-repeat;
+  background-size: auto;
+  .preview {
+    display: block;
+    width: 1300px;
+    height: 825px;
+    margin: 20px auto;
+    background: url("../img/video-1.png") top center no-repeat;
+    background-size: auto;
+    position: relative;
+    .play {
+      content: "";
+      display: block;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      width: 115px;
+      height: 115px;
+      background: url("../img/play.svg") center no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 320px;
+      left: 50%;
+      margin-left: -57px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        background-image: url("../img/play-hover.svg")
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .preview {
+      width: 100vw;
+      min-height: 225px;
+      height: calc(100vw * 0.63);
+      background-size: cover;
+
+      .play {
+        top: 25vw;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    background-size: cover;
+    background-position: right center;
+    padding-top: 50px;
+    .preview .play {
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+
+  }
+}

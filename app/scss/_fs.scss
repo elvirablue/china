@@ -1,0 +1,239 @@
+.fs.bg-gradient {
+  width: 100%;
+  height: auto;
+  min-height: 290px;
+  background-color: rgb(30,58,80);
+  background-image: linear-gradient(to right,rgb(5,28,46) 0%, rgb(30,58,80) 100%);
+  @include media-breakpoint-down(md) {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+}
+
+.fs-bg {
+  //height: 100vh;
+  height: auto;
+  min-height: 748px;
+  background: url("../img/bg-fs.jpg") no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+
+  .title {
+    width: 590px;
+    margin-left: 495px;
+    padding-top: 55px;
+    text-align: left;
+    h1 {
+      padding-left: 0;
+    }
+    * {
+      text-align: left;
+    }
+    > .t1 {
+      @include text(36px, 400);
+      color: #fff;
+      padding-top: 10px;
+    }
+    > .t2 {
+      @include text(22px, 300);
+      color: #fff;
+      padding-top: 40px;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 50%;
+      margin-left: 40%;
+    }
+    @include media-breakpoint-down(md) {
+      > .t1 {font-size: 30px;}
+      > .t2 {font-size: 20px;}
+    }
+    @include media-breakpoint-down(sm) {
+      width: 70vw;
+      padding-top: 20px;
+      margin: 0 auto 0 20vw;
+
+      > .t1 {font-size: 20px;}
+      > .t2 {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: 300px;
+      * {
+        text-align: right;
+      }
+    }
+  }
+  .video {
+    display: block;
+    width: 327px;
+    height: 327px;
+    padding: 64px 40px 0;
+    background: url("../img/bg-fs-1.jpg") top center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    margin-left: 255px;
+    bottom: -220px;
+    text-align: center;
+    > .t1 {
+      @include text-cd(16px, 300);
+      color: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    > .button {
+      width: 100%;
+    }
+    @include media-breakpoint-down(lg) {
+      left: 65%;
+      margin-left: 0;
+    }
+    @include media-breakpoint-down(md) {
+      width: 40vw;
+      height: 40vw;
+      max-height: 280px;
+      max-width: 300px;
+      padding: 40px 30px 0;
+      left: auto;
+      right: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      right: 10vw;
+      left: 10vw;
+      bottom: 30px;
+      width: 80vw;
+      min-height: 220px;
+      margin: 0 auto;
+      padding-top: 20px;
+      >.t1 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .mobile-view {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 20px;
+
+    .logo {
+      display: block;
+      height: 40px;
+      width: auto;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .phone {
+      display: block;
+      white-space: nowrap;
+      color: #FFF;
+      text-decoration: none;
+      @include text-open(18px, 400);
+    }
+    @include media-breakpoint-down(xs) {
+      padding: 0 10px 0 70px;
+      .logo {
+        width: 30vw;
+      }
+
+      .phone {font-size: 14px;}
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    min-height: 650px;
+    h2 {
+      margin: 60px 0;
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    //min-height: auto;
+    padding-bottom: 30px;
+    background-position: -530px top;
+    h2 {
+      margin: 40px 0;
+    }
+  }
+}
+
+.fs {
+  position: relative;
+
+  .fs-line {
+    display: block;
+    width: 11px;
+    height: 600px;
+    background: url("../img/fs-line.svg") no-repeat bottom center;
+    background-size: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -590px;
+    bottom: 0;
+    @include media-breakpoint-down(lg) {
+      left: 20px;
+      margin-left: 0;
+    }
+    @include media-breakpoint-down(md) {
+      height: 400px;
+      background-size: contain;
+    }
+  }
+  .t1 {
+    @include text(38px, 500);
+    line-height: 1.2;
+    color: #fff;
+    padding-top: 70px;
+    padding-left: 70px;
+  }
+  .t2 {
+    width: 635px;
+    @include text(24px, 300);
+    line-height: 1.5;
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 70px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .btn-down-red {
+      margin-left: 60%;
+    }
+
+  }
+  @include media-breakpoint-down(md) {
+    .t1 {
+      font-size: 30px;
+      padding-top: 40px;
+      padding-left: 40px;
+    }
+    .t2 {
+      width: 55vw;
+      font-size: 20px;
+      padding-left: 40px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .t1 {
+      font-size: 24px;
+      padding-top: 40px;
+      padding-left: 40px;
+    }
+    .t2 {
+      width: auto;
+      font-size: 18px;
+      padding-left: 40px;
+    }
+  }
+
+}

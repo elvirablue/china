@@ -1,0 +1,22 @@
+.social {
+  display: block;
+  text-align: right;
+  margin-top: 30px;
+  a {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    &:first-child {
+      margin-left: 0;
+    }
+    img {
+      display: block;
+      width: 60%;
+      margin: auto;
+    }
+  }
+}

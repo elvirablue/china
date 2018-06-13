@@ -1,0 +1,76 @@
+$color-placeholder: #363636;
+$color-input: #262626;
+.user-input {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+  height: 60px;
+  padding: 0 30px;
+  margin: 0;
+  outline: none;
+  color: $color-input;
+  @include text(16px,400);
+  line-height: 70px;
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+  }
+}
+
+.select {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  background-color: #000;
+  width: 336px;
+  min-width: 200px;
+  height: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  select {
+    background-color: inherit;
+    font: inherit;
+    color: inherit;
+    height: inherit;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    option {
+      color: inherit;
+      font: inherit;
+    }
+  }
+}
+
+
+::-webkit-input-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+::-moz-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $color-placeholder;
+  opacity: 0.7;
+}
+

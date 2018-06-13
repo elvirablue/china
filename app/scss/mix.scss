@@ -1,0 +1,67 @@
+@import "blocks/bs/bootstrap.scss";
+@import "variables";
+@import "scaffolding";
+@import "modal";
+@import "input";
+@import "button";
+@import "ch-wrapper";
+@import "navbar";
+@import "fs";
+@import "for-whom";
+@import "video";
+@import "what-learn";
+@import "training";
+@import "book";
+@import "benefit";
+@import "b-bonus";
+@import "slider";
+@import "result";
+@import "social";
+@import "main-footer";
+
+body {
+  //background: url("../img/02.png") no-repeat top center;
+  //height: 4843px;
+}
+
+.wrapper-x {
+  overflow: hidden !important;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.wrapper-y {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+ // padding-bottom: $height-footer;
+  @include media-breakpoint-down(sm) {
+    //padding-bottom: $height-footer-xs;
+  }
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.engrave {
+  filter: grayscale(100%);
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
+}
