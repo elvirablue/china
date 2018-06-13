@@ -64,6 +64,8 @@ function validateForm($form) {
 //*****************
 var owl = $('#owl-1');
 
+$("input[name^='user-phone']").mask("+7 (999) 999 - 9999");
+
 owl.owlCarousel({
   loop:true,//Зацикливаем слайдер
   margin:40,
@@ -102,9 +104,9 @@ owl.owlCarousel({
   });
 
 
-  window.onscroll = function() {
-    scrollFunction()
-  };
+  //window.onscroll = function() {
+  //  scrollFunction()
+      //};
 
   function scrollFunction() {
     var position = $(window).scrollTop();

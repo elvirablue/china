@@ -187,6 +187,9 @@
     @include media-breakpoint-down(md) {
       height: 400px;
       background-size: contain;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
   }
   .t1 {

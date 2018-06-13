@@ -51,7 +51,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
         .owl-dot {
           display: block;
           width: 9px;
@@ -74,6 +73,7 @@
     width: auto;
     max-width: 430px;
     margin: 0 auto; //430px;
+    padding-bottom: 40px;
     .date {
       display: block;
       padding: 20px 10px 10px 90px;

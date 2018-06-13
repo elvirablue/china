@@ -5457,7 +5457,7 @@ a {
   @media (max-width: 991.98px) {
     .navbar {
       top: 0 !important;
-      position: fixed !important;
+      position: absolute !important;
       z-index: 1000;
       padding: 0;
       width: 60px;
@@ -5466,10 +5466,7 @@ a {
   .navbar .navbar-toggler {
     padding: 12px 14px;
     border-radius: 0;
-    background-color: #1e3a50;
-    background-image: -webkit-linear-gradient(top left, #051c2e 0%, #1e3a50 100%);
-    background-image: linear-gradient(to bottom right, #051c2e 0%, #1e3a50 100%);
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: transparent;
     outline: none;
     color: #fff;
     position: relative;
@@ -5550,7 +5547,8 @@ a {
         border: 1px solid rgba(0, 0, 0, 0.25);
         position: relative;
         z-index: 999;
-        margin-top: -1px; } }
+        margin-top: -62px;
+        padding-top: 62px; } }
     @media (max-width: 575.98px) {
       .navbar .navbar-collapse {
         height: 103vh;
@@ -5800,6 +5798,9 @@ a {
       .fs .fs-line {
         height: 400px;
         background-size: contain; } }
+  @media (max-width: 991.98px) and (max-width: 767.98px) {
+    .fs .fs-line {
+      display: none; } }
   .fs .t1 {
     font-family: 'Roboto', sans-serif;
     font-size: 38px;
@@ -6157,8 +6158,9 @@ a {
     max-width: none;
     position: absolute;
     z-index: 3;
-    top: -40px;
-    left: 70px; }
+    top: -35px;
+    left: 50%;
+    margin-left: -680px; }
   .book .banner {
     display: block;
     width: 435px;
@@ -6183,7 +6185,8 @@ a {
         width: 100vw;
         height: auto;
         left: 0;
-        top: 0; }
+        top: 0;
+        margin-left: -10px; }
       .book .banner {
         margin-left: 5vw; } }
   @media (max-width: 991.98px) {
@@ -6461,8 +6464,7 @@ a {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center;
-      padding-top: 40px; }
+              align-items: center; }
       .slider .wrapper #owl-1 .owl-dots .owl-dot {
         display: block;
         width: 9px;
@@ -6479,7 +6481,8 @@ a {
   .slider .item {
     width: auto;
     max-width: 430px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 40px; }
     .slider .item .date {
       display: block;
       padding: 20px 10px 10px 90px;
